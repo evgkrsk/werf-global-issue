@@ -6,4 +6,4 @@ metadata:
     helm.sh/hook: pre-install,pre-upgrade
     helm.sh/hook-weight: "4"
 data:
-  DB_HOST: {{ pluck .Values.global.env .Values.database.host | first }}
+  DB_HOST: {{ pluck .Values.env.name .Values.database.host | first }}

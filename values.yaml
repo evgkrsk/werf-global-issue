@@ -81,8 +81,8 @@ tolerations: []
 
 affinity: {}
 
-global:
-  env: dev
+env:
+  name: dev
 
 database:
   host:
