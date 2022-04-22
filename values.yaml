@@ -80,3 +80,12 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+global:
+  env: dev
+
+database:
+  host:
+    dev: dev
+    stage: stage
+    prod: prod
